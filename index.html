@@ -1,793 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-		<head>
-			<title>Personal Site</title>
-			<style>
-				body {
-					width: 90%;
-					margin: 0 auto;
-					margin-left: 70%; /* Adjust the percentage to shift the body to the right */
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Saru Gabriel-Alexandru — Site Reliability Engineer</title>
+	<meta name="description" content="Site Reliability Engineer with 6+ years in software — Azure Public and Sovereign Clouds, automation, EV2 deployments and large-scale storage infrastructure.">
+	<meta name="author" content="Saru Gabriel-Alexandru">
 
-				}
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Saru Gabriel-Alexandru — Site Reliability Engineer">
+	<meta property="og:description" content="6+ years in software — Azure Public &amp; Sovereign Clouds, EV2 deployments, automation and distributed systems.">
+	<meta property="og:url" content="https://gabrielsaru28.github.io/">
 
-			</style>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
 
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-			
-			<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<script>
+		/* Apply the saved theme before first paint. */
+		(function () {
+			try {
+				var t = localStorage.getItem("theme");
+				if (t) document.documentElement.setAttribute("data-theme", t);
+			} catch (e) {}
+		})();
+	</script>
+</head>
 
-			<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-			<link rel="stylesheet" href="css/animate.css">
-			
-			<link rel="stylesheet" href="css/owl.carousel.min.css">
-			<link rel="stylesheet" href="css/owl.theme.default.min.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">   
-				
-			<link rel="stylesheet" href="css/aos.css">
+<body>
 
-			<link rel="stylesheet" href="css/ionicons.min.css">
-			
-			<link rel="stylesheet" href="css/flaticon.css">
-			<link rel="stylesheet" href="css/icomoon.css">
-			<link rel="stylesheet" href="css/style.css">
-		</head>
-		
-		<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-				
-		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-			<div class="wide-div container width: 150%;">
-			
-				<a class="navbar-brand" href="index.html">Personal Site</a>
-			
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
+	<header class="nav">
+		<div class="wrap">
+			<a class="nav-name" href="#top">Saru Gabriel-Alexandru</a>
+			<nav class="nav-links" aria-label="Sections">
+				<a href="#experience">Experience</a>
+				<a href="#skills">Skills</a>
+				<a href="#projects">Projects</a>
+				<a href="#education">Education</a>
+				<a href="#contact">Contact</a>
+			</nav>
+			<button class="theme-toggle" type="button" aria-label="Toggle colour theme">
+				<svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M4.4 4.4l1.4 1.4M18.2 18.2l1.4 1.4M2.5 12h2M19.5 12h2M4.4 19.6l1.4-1.4M18.2 5.8l1.4-1.4"/></svg>
+				<svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
 			</button>
+		</div>
+	</header>
 
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Tools</span></a></li>
-					<li class="nav-item"><a href="#certifications-section" class="nav-link"><span>Certifications</span></a></li>
-					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>	
-				</ul>
-			</div>
-		</nav>
+	<!-- ---------------------------------------------------------------- Hero -->
+	<section class="hero" id="top">
+		<div class="wrap">
+			<span class="pill"><i></i> Open to new roles — most recently Microsoft, Azure Storage</span>
 
-		<section id="home-section" class="hero">
-			<div class="home-slider  owl-carousel">
-			<div class="slider-item ">
-				<div class="overlay"></div>
-				<div class="container">
-				<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-					<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/);">
-						<div class="overlay"></div>
-					</div>
-					<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-						<div class="text">
-							<span class="subheading">Hello!</span>
-							<h1 class="mb-4 mt-3">I'm <span>Saru Gabriel</span></h1>
-							<h2 class="mb-4"> .NET  Fullstack Developer</h2>
-						</div>
-					</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</section>
+			<h1>Saru Gabriel-Alexandru</h1>
+			<p class="role">Site Reliability Engineer</p>
 
-		<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-			<div class="container">
-				
-				<div class="row d-flex">
-				
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch" style="background-image:url(images/);">
-							<div class="overlay"></div>
-							<div class="img d-flex align-self-stretch align-items-left" style="background-image:url(images/);">
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5" style="float: left;">
-						<div class="row justify-content-start pb-3">
-					
-						<div style="text-align: left;" class="col-md-12 heading-section ftco-animate" >
-						<h1 class="big" >About</h1>
-						<h2 class="mb-4" style="background-image:url(images/);">About Me</h2>
-						<p> 
-							<br>
-						    </br>
-							As a freshly graduated Computer Scientist Engineer from the Faculty of Automatic Control and Computer Science, I would like to say that I posses a strong desire to acquire new technical skills, and apply my existing ones in a challenging environment. 
-							I would like to add that, adaptability allows me to easily embrace new technologies and programming languages, making it suitable for any field of computer science. 							
-							<br>
-						    </br>
-							However, my main interest lies in back-end development, where I can delve into the depths of algorithms and data structures, which happen to be some of my favorite subjects.
-							I thrive in innovative teams and greatly value sharing ideas, discussing problems, and, most importantly, finding solutions together, able to work effectively both as part of a team and independently, using my initiative to achieve goals.
-							<br>
-						    </br>
-							Recognizing that creativity is an exciting and unpredictable journey, I firmly believe in the quote, "No creative project ever turns out how you expect at the start, because creativity is exciting, vulnerable, challenging, and every other emotion under the sun." 
-							This mindset enables me to approach challenges with an open mind and a willingness to explore unconventional approaches.
-							<br>
-							</br>
-							My areas of interest include exploring and implementing innovative projects that leverage efficient algorithms and data structures across various domains.																												
-						</p>
-		
-						<ul class="about-info mt-4 px-md-0 px-2">
-							<li class="d-flex"><span>Name:</span> <span>Saru Gabriel - Alexandru</span></li>
-							<li class="d-flex"><span>Email:</span> <span>sarugabriel2011@yahoo.com</span></li>
-						</ul>
-					</div>
+			<p>
+				Six-plus years in software, the last three of them in the Azure Storage (XStore) ecosystem — onboarding
+				sovereign clouds and replacing manual, error-prone release processes with EV2-managed automation. Before
+				Microsoft I built full-stack .NET products and backend services; my interests sit in distributed systems,
+				algorithms and the infrastructure underneath them.
+			</p>
 
-				</div>
-		
-				<div class="counter-wrap ftco-animate d-flex mt-md-3">
-				<div class="text">
-					
-					<p><a href="/images/_SaruGabrielAlexandru_CV.pdf" class="btn btn-primary py-3 px-3">Download CV</a></p>
-				</div>
-
-				</div>
-				
-			
+			<div class="figures">
+				<div><b>6+</b><span>years in software</span></div>
+				<div><b>~3</b><span>years at Microsoft</span></div>
+				<div><b>3</b><span>sovereign clouds onboarded</span></div>
+				<div><b>3</b><span>global regions enabled</span></div>
 			</div>
 
-		</section>
-
-		<section class="ftco-section ftco-no-pb" id="resume-section">
-			
-
-			<style>
-				body {
-					width: 70%;
-					margin: 0 auto;
-					margin-left: 10%; /* Adjust the percentage to shift the body to the right */
-				}
-				
-
-			</style>
-
-			<div class="container">
-				<div class="row justify-content-center pb-5">
-		
-					<div class="col-md-10 heading-section text-center ftco-animate">
-
-				<h2 class="mb-4" style="text-align: left;">Education&emsp;&emsp;&emsp;&emsp;&emsp; Experience</h2>
-			</div>
-
-			
-
-			<div class="row" style="text-align: left; width: 100%;" >
-
-				<div class="col-md-6">
-					<!--   University    -->
-					<div class="resume-wrap ftco-animate" >
-						<img class="align-left" src="images/test2.png" alt="Image description">
-									
-						<span class="date">&emsp; &emsp; &emsp; 2019 - 2023</span>
-						<h2> Bachelor's Degree of C.S</h2> 			
-						<span class="position">Politehnica University of Bucharest</span>
-						
-						<br>
-						</br>
-						
-						<img class="align-left" src="images/cancer_1_12.jpg" alt="Image description"> 
-						<span class="position"><b>Faculty of Automatic Control and Computer Science</b></span>
-
-						<p class="mt-4">
-
-							Throughout my academic journey, I have been passionate about <b>Computer Science</b>, and this drive led me to pursue a <b>Bachelor's Degree in Computer Science</b>, at <b>Faculty of Automatic Control and Computer Science</b>, from the esteemed <b>Politehnica University of Bucharest</b>.
-							<br>
-							</br>
-							
-							Throughout my academic journey, I was able to delve deeper into the field and gain a comprehensive understanding of various aspects of <b>Computer Science</b>. 
-							<br>
-							</br>
-							
-							The curriculum was designed to provide me with a strong foundation in <b>essential areas such as programming, data structures and algorithms, computer networks, databases, computer graphics, computer architecture, and operating systems</b>. 
-							<br>
-							</br>
-							
-							The courses were taught by experienced faculty members who instilled a love for learning and critical thinking in me. 
-							<br>
-							</br>
-							
-							I was particularly drawn to courses such as algorithm design, parallel and distributed algorithms, and programming paradigms, which allowed me to explore cutting-edge concepts in <b>Computer Science</b>. 
-							
-							<br>
-							</br>
-							My passion for the subject grew with each passing day, and I am now eager to apply the knowledge and skills I have acquired to real-world problems.
-
-							<br>
-							</br>
-							<b>Courses:</b>
-							<br>
-						    </br>
-							<b>4th Year</b>
-							<br>
-						    </br>
-							Microprocessor Systems<br>
-							Project Management<br>
-							Artificial intelligence<br>
-							Compiler<br>
-							Software systems for computer networks<br>
-							Databases II<br>
-							Tools for program development<br>
-							Operating systems II<br>
-							Elements of mobile computing<br>
-							<br>
-							</br>
-							<b>3rd Year</b>
-							<br>
-						    </br>
-							Parallel and distributed algorithms<br>
-							Formal and automatic languages<br>
-							Local networks<br>
-							Numerical calculators II<br>
-							Computer graphics<br>
-							Designing with microprocessors<br>
-							The architecture of computing systems<br>
-							Operating systems<br>
-							Databases I<br>
-							Computer networks<br>
-							<br>
-						    </br>
-							<b>2nd Year</b>
-							<br>
-						    </br>
-							Analysis of algorithms<br>
-							Object Oriented Programming<br>
-							Elements of analog electronics<br>
-							Systems theory<br>
-							Algorithm design<br>
-							Programming paradigms<br>
-							Communication protocols<br>
-							Numerical calculators I<br>
-							Digital electronics<br>
-							Data acquisition and virtual instrumentation<br>
-							Computer programming and programming languages 2<br>
-							<br>
-						    </br>
-
-							<b>1st Year</b>
-							<br>
-						    </br>
-							Introduction to computer science<br>
-							Mathematics 1 (Analysis)<br>
-							Math 2 (Algebra)<br>
-							Computer programming<br>
-							Logical design<br>
-							Use of operating systems<br>
-							Logic<br>
-							Physics<br>
-							Mathematics 3 (Special Mathematics)<br>
-							Data structures<br>
-							Basics of electrical engineering<br>
-							Numerical methods<br>
-							Communication techniques<br>
-
-						</p>
-					</div>
-
-
-					<!-- High School -->
-					<div class="resume-wrap ftco-animate">
-						<img class="align-left" src="images/hsss.png" alt="Image description">
-						<span class="date">&emsp; &emsp; &emsp;2015 - 2019</span>
-						<h2>International Baccalaureate Diploma</h2>
-						<span class="position">National College "Anastasescu"</span>
-
-						<p class="mt-4">
-							
-							During my high school years at National College "Anastasescu," my curiosity for computer science was piqued, and I was quickly enamored by the endless possibilities that the field offered. 
-							<br>
-						    </br>
- 							I dedicated a significant amount of my free time to studying computer science, and I took every opportunity to learn more about the subject. 
-							 <br>
-						    </br>
-							I was particularly drawn to the discipline's logical and analytical approach, which allowed me to develop critical thinking skills. 
-							<br>
-						    </br>
-							I spent hours tinkering with code and exploring the different programming languages, and I was particularly interested in algorithms, data structures, and performance. 
-							<br>
-						    </br>
-							My passion for Computer Science was evident in my excellent grades in Math and Computer Science, and I was often asked to help my classmates understand the concepts. 
-							<br>
-						    </br>
-							My dedication to the subject led me to pursue a degree in Computer Science, and I am now on a path to realizing my dream of contributing to the world of technology.
-							<br>
-							</br>
-							Courses:
-							<br>
-							</br>
-							• Mathematics <br>
-							• Physics<br>
-							• Chemistry<br>
-						</p>
-					
-					</div>
-
-
-				</div>
-
-				<div class="col-md-6">
-					
-					<div class="resume-wrap ftco-animate">
-						<img class="align-left" src="images/microtroll_.png" alt="Image description">		
-
-						<span class="date">12/2023 - Present
-							</br>
-							<span class="position">
-								1y 9 Months
-							</span>
-
-						</span>
-						<h2>Site Reliability Engineer 2</h2>
-						<span class="position">Microsoft</span>
-						
-						<p class="mt-4">Achievements/Tasks</p>
-						<p class="mt-4">							
-							• Streamlined Sovereign Cloud buildouts by automating DNS Zones and IP whitelisting, significantly reducing manual overhead.<br>	
-							<br>
-							• Enabled smooth global rollouts (France, Germany, Singapore) of XStore by automating storage account creation and eliminating repetitive
-							tasks.<br>	
-							<br>
-							• Improved consistency and reliability across regions by automating MiniSRP workflows and deployments in both Public and Sovereign Clouds.<br>	
-							<br>
-							• Accelerated readiness of new cloud regions through efficient setup, debugging, and deployment of MiniSRP environments and SLV.<br>	
-							<br>
-							• Simplified tenant onboarding for Bleu and Delos GovSG by developing automation pipelines (PowerShell → C#), reducing errors and increasing
-							adoption speed.<br>	
-							<br>
-							• Strengthened resilience of SovCloud Microsoft Services by executing migration plans, remediation tasks, and high-availability improvements.<br>	
-							<br>
-							• Reduced configuration issues by enhancing Dynamic Config processes for Bleu and Delos tenants.<br>	
-							<br>
-						</p>
-					</div>
-
-					<!--   Experience    -->
-					<div class="resume-wrap ftco-animate">
-						<img class="align-left" src="images/colla_20.jpg" alt="Image description">		
-
-						<span class="date">01/2023 - 06/2023
-							</br>
-							<span class="position">
-								6 Months
-							</span>
-
-						</span>
-						<h2>Fullstack .NET  Developer</h2>
-						<span class="position">Collabera</span>
-						
-						<p class="mt-4">Achievements/Tasks</p>
-						<p class="mt-4">
-							• Improved system observability by integrating advanced telemetry and correlating APIs with vector contexts for faster troubleshooting.<br>	
-							<br>
-							• Reduced deployment risks and improved delivery speed through CI/CD pipeline automation, code reviews, and comprehensive testing
-							practices.
-							• Enhanced database performance by redesigning the data model, removing duplicate records, and optimizing queries.<br>	
-							<br>
-							• Boosted team efficiency by streamlining integration workflows and ensuring consistent environments across development and production.<br>	
-							<br>
-						</p>
-					</div>
-					
-					
-					<div class="resume-wrap ftco-animate">
-						<img class="align-left" src="images/signal_1_40.jpg" alt="Image description">		
-						<span class="date">
-							&emsp;  08/2021 - 09/2022
-						</br>
-							<span class="position">1 Year</span>
-
-						</span>
-						<h2>Junior System Developer</h2>
-						<span class="position">Signal - Iduna Romania Asigurare - Reasigurare</span>
-						<p class="mt-4">Achievements/Tasks</p>
-						
-						<p class="mt-4">						 
-							• Learned and adapted quickly to new technology and software applications.<br>	
-							<br>
-							• Used critical thinking to break down problems, evaluate solutions and make decisions.<br>	
-							<br>
-							• Delivered reliable new features by implementing unit and automated testing with Microsoft Playwright, minimizing regressions.<br>	
-							<br>
-							• Supported business needs with innovative solutions by applying structured problem-solving and critical thinking.<br>	
-							<br>
-							• Improved product stability and customer satisfaction by identifying and fixing recurring issues before release.<br>	
-							<br>
-							• Quickly adapted to new technologies and integrated them effectively into ongoing projects.<br>	
-							<br>
-						</p>
-					</div>
-
-
-					<div class="resume-wrap ftco-animate">
-						<img class="align-left" src="images/free-f.png" alt="Image description">		
-						
-						<span class="date">
-							&emsp;  02/2020 - 08/2021
-							</br>
-							<span class="position">1.6 Years</span>
-						</span>		
-
-						<h2>Freelancer</h2>
-
-						<span class="position">Freelancing.com</span>
-						<p class="mt-4">Achievements/Tasks</p>
-
-						<p class="mt-4">
-							• Optimized websites and mobile applications to achieve maximum performance.<br>	
-							<br>
-							• Generated detailed reports to highlight product performance and usage metrics.<br>	
-							<br>
-							• Developed and maintained user documentation to establish product understanding.	<br>	
-							<br>						
-						</p>
-					</div> 
-
-				</div>
-			</div>
-				
-				
-		</section>
-
-		<section class="ftco-section" id="services-section">
-			<div class="container">
-				<div class="row justify-content-center py-5 mt-5">
-			<div class="col-md-12 heading-section text-center ftco-animate">
-				<h1 class="big big-2">Tools</h1>
-				<h2 class="mb-4">Tools</h2>
-				<p>Below are listed the tools that I've used during my job experience and university projects.</p>
-			</div>
-			</div>
-				<div class="row">
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-flasks"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Docker</h3>
-								<p>Docker is a software platform that enables you to create, deploy, and run applications in a containerized environment.</p>
-							</div>
-						</a>
-					</div>
-
-						<div class="col-md-4 text-center d-flex ftco-animate">
-							<a href="#" class="services-1">
-								<span class="icon">
-									<i class="flaticon-flasks"></i>
-								</span>
-								<div class="desc">
-									<h3 class="mb-5">Git</h3>
-									<p>Git is a Version Control System (VCS) that allows you to save your work and go back and forward easily and securely. Also, two or more developers could work on the same project/file simultaneously.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-md-4 text-center d-flex ftco-animate">
-							<a href="#" class="services-1">
-								<span class="icon">
-									<i class="flaticon-ideas"></i>
-								</span>
-								<div class="desc">
-									<h3 class="mb-5">GitHub</h3>
-									<p>GitHub is a web-based Git repository hosting service. In simple words, it is like a Google Drive for software projects, where you can find code.</p>
-								</div>
-							</a>
-						</div>
-
-						<div class="col-md-4 text-center d-flex ftco-animate">
-							<a href="#" class="services-1">
-								<span class="icon">
-									<i class="flaticon-analysis"></i>
-								</span>
-								<div class="desc">
-									<h3 class="mb-5">JIRA</h3>
-									<p>Jira is a powerful work management tool for software engineering projects.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-md-4 text-center d-flex ftco-animate">
-							<a href="#" class="services-1">
-								<span class="icon">
-									<i class="flaticon-flasks"></i>
-								</span>
-								<div class="desc">
-									<h3 class="mb-5">Slack</h3>
-									<p>Code is written in a community of developers, almost nobody will create a productive and robust app for the market by itself. Slack is where work flows. It's where the people you need, the information you share, and the tools you use come together to get things done.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-md-4 text-center d-flex ftco-animate">
-							<a href="#" class="services-1">
-								<span class="icon">
-									<i class="flaticon-ideas"></i>
-								</span>
-								<div class="desc">
-									<h3 class="mb-5">Docker</h3>
-									<p>Docker is an open-source containerization platform that packages the application and dependencies inside a “container.” The containers are lightweight executable packages that include all the dependencies required to run an application.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-md-4 text-center d-flex ftco-animate">
-							<a href="#" class="services-1">
-								<span class="icon">
-									<i class="flaticon-ideas"></i>
-								</span>
-								<div class="desc">
-									<h3 class="mb-5">CLion</h3>
-									<p>CLion is more than just an editor as it offers a powerful debugger and dynamic analysis tools to investigate and solve problems with ease, built-in Google Test, Boost.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-md-4 text-center d-flex ftco-animate">
-							<a href="#" class="services-1">
-								<span class="icon">
-									<i class="flaticon-ideas"></i>
-								</span>
-								<div class="desc">
-									<h3 class="mb-5">InteliJ</h3>
-									<p>Intellij is an Integrated Development Environment. An IDE integrates all the tools that you need to develop a platform, so it has a code editor, a compiler, a debugger, etc.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-md-4 text-center d-flex ftco-animate">
-							<a href="#" class="services-1">
-								<span class="icon">
-									<i class="flaticon-ideas"></i>
-								</span>
-								<div class="desc">
-									<h3 class="mb-5">Pycharm</h3>
-									<p>PyCharm is a dedicated Python Integrated Development Environment (IDE) providing a wide range of essential tools for Python developers, tightly integrated to create a convenient environment for productive Python, web, and data science development.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-md-4 text-center d-flex ftco-animate">
-							<a href="#" class="services-1">
-								<span class="icon">
-									<i class="flaticon-ideas"></i>
-								</span>
-								<div class="desc">
-									<h3 class="mb-5">Visual Studio</h3>
-									<p>An integrated development environment (IDE) is a feature-rich program that supports many aspects of software development. The Visual Studio IDE is a creative launching pad that you can use to edit, debug, and build code, and then publish an app.</p>
-								</div>
-							</a>
-						</div>
-
-						<div class="col-md-4 text-center d-flex ftco-animate">
-							<a href="#" class="services-1">
-								<span class="icon">
-									<i class="flaticon-ideas"></i>
-								</span>
-								<div class="desc">
-									<h3 class="mb-5">Visual Studio Code</h3>
-									<p>Visual Studio Code is a streamlined code editor with support for development operations like debugging, task running, and version control. It aims to provide just the tools a developer needs for a quick code-build-debug cycle and leaves more complex workflows to fuller featured IDEs, such as Visual Studio IDE.</p>
-								</div>
-							</a>
-						</div>
-
-						<div class="col-md-4 text-center d-flex ftco-animate">
-							<a href="#" class="services-1">
-								<span class="icon">
-									<i class="flaticon-ideas"></i>
-								</span>
-								<div class="desc">
-									<h3 class="mb-5">Linux Bash</h3>
-									<p>Bash (Bourne Again Shell) is the free and enhanced version of the Bourne shell distributed with Linux and GNU operating systems.</p>
-								</div>
-							</a>
-						</div>
-
-					</div>
-
-			</div>
-		</section>
-
-
-		<section class="" id="certifications-section">
-			
-		</section>
-
-
-		<section class="ftco-section" id="skills-section">
-			<div class="container">
-			<div class="row justify-content-center pb-5">
-			<div class="col-md-12 heading-section text-center ftco-animate">
-			<h1 class="big big-2">Skills</h1>
-			<h2 class="mb-4">My Skills</h2>
-			<p>Below are listed my skills, gained from both college and current job experience.</p>
+			<div class="meta">
+				<span>Sibiu, Romania</span>
+				<span class="sep">/</span>
+				<a href="mailto:sarugabriel2011@yahoo.com">sarugabriel2011@yahoo.com</a>
+				<span class="sep">/</span>
+				<a href="tel:+40764152648">+40 764 152 648</a>
+				<span class="sep">/</span>
+				<button class="linkish" type="button" data-cv-open>CV (PDF)</button>
+				<span class="sep">/</span>
+				<a href="https://www.linkedin.com/in/saru-gabriel-alexandru/" target="_blank" rel="noopener">LinkedIn</a>
+				<span class="sep">/</span>
+				<a href="https://github.com/gabrielsaru28" target="_blank" rel="noopener">GitHub</a>
 			</div>
 		</div>
+	</section>
+
+	<!-- ---------------------------------------------------------- Experience -->
+	<section class="section" id="experience">
+		<div class="wrap">
+			<div class="label">Experience</div>
+
+			<div class="totals">
+				<div class="totals-head">
+					<b>6 years 7 months</b>
+					<span>total professional experience · 02/2020 — 09/2026</span>
+				</div>
+				<ul class="totals-split">
+					<li><b>2 yr 10 mo</b><span>Microsoft · SRE II</span></li>
+					<li><b>6 mo</b><span>Collabera · .NET</span></li>
+					<li><b>1 yr</b><span>Signal Iduna · Sys dev</span></li>
+					<li><b>1 yr 7 mo</b><span>Freelance · Dev</span></li>
+				</ul>
+			</div>
+
+			<article class="entry">
+				<div class="entry-when">
+					<span>12/2023 — 09/2026</span>
+					<span>Bucharest, RO</span>
+				</div>
+				<div>
+					<h3>Site Reliability Engineer II</h3>
+					<div class="org"><span class="mark"><img src="images/Microsoft_.jpg" alt=""></span><b>Microsoft</b> · Azure Storage (XStore)</div>
+					<ul class="points">
+						<li>Onboarded the <strong>Delos</strong> and <strong>GovSG</strong> sovereign clouds into the XStore ecosystem — Geneva Actions authentication, Key Vault integration, Kusto routing, monitoring, deployment packaging and environment-specific configuration.</li>
+						<li>Added Delos support for <strong>Geneva Actions EV2 deployments</strong>, replacing manual deployment processes with EV2-managed, staged rollouts.</li>
+						<li>Automated <strong>storage account migration</strong> across account type and region, from Public Cloud regions into Sovereign Cloud regions.</li>
+						<li>Built <strong>SRP Manifest PR automation</strong> that generates Storage-SRP manifests and raises pull requests for new-cloud onboarding, using OneDCMT region definitions as the source of truth — removing a manual, error-prone step for Bleu, Delos and GovSG.</li>
+						<li>Authored the team's <strong>EV2 automation guides and runbooks</strong>: Geneva Actions onboarding, MDS provisioning, certificate management, dSTS/Key Vault/RBAC setup, troubleshooting and rollout process.</li>
+						<li>Streamlined Sovereign Cloud buildouts by automating DNS zones and IP whitelisting, and enabled global XStore rollouts in <strong>France, Germany and Singapore</strong> through automated storage account creation.</li>
+						<li>Automated <strong>MiniSRP</strong> workflows and deployments across Public and Sovereign Clouds, accelerating new-region readiness through faster MiniSRP/SLV setup, debugging and deployment.</li>
+						<li>Rewrote Bleu and Delos GovSG <strong>tenant onboarding pipelines from PowerShell to C#</strong>, reducing errors and increasing adoption.</li>
+						<li>Strengthened SovCloud resilience through migration plans, remediation and high-availability work, and cut configuration drift via Dynamic Config improvements.</li>
+					</ul>
+					<div class="stack">C# · Azure · EV2 · Geneva Actions · Key Vault · Kusto · Bicep/ARM · PowerShell</div>
+				</div>
+			</article>
+
+			<article class="entry">
+				<div class="entry-when">
+					<span>01/2023 — 06/2023</span>
+					<span>Bucharest, RO</span>
+				</div>
+				<div>
+					<h3>Full-Stack .NET Developer</h3>
+					<div class="org"><span class="mark"><img src="images/colla_20.jpg" alt=""></span><b>Collabera</b></div>
+					<ul class="points">
+						<li>Improved observability by integrating advanced telemetry and correlating APIs with vector contexts for faster troubleshooting.</li>
+						<li>Reduced deployment risk and improved delivery speed through CI/CD automation, code reviews and comprehensive testing.</li>
+						<li>Improved database performance by redesigning the data model, removing duplicate records and optimizing queries.</li>
+						<li>Streamlined integration workflows and kept development and production environments consistent.</li>
+					</ul>
+					<div class="stack">.NET · C# · SQL · CI/CD</div>
+				</div>
+			</article>
+
+			<article class="entry">
+				<div class="entry-when">
+					<span>08/2021 — 08/2022</span>
+					<span>Bucharest, RO</span>
+				</div>
+				<div>
+					<h3>Junior System Developer</h3>
+					<div class="org"><span class="mark"><img src="images/signal_1_40.jpg" alt=""></span><b>Signal Iduna</b></div>
+					<ul class="points">
+						<li>Delivered features backed by unit and automated tests with <strong>Microsoft Playwright</strong>, minimizing regressions.</li>
+						<li>Built an internal HR application that replaced manual bureaucratic operations and cut repetitive paperwork.</li>
+						<li>Improved product stability by identifying and fixing recurring issues before release.</li>
+						<li>Picked up new technologies quickly and integrated them into ongoing projects.</li>
+					</ul>
+					<div class="stack">C# · .NET · Playwright</div>
+				</div>
+			</article>
+
+			<article class="entry">
+				<div class="entry-when">
+					<span>02/2020 — 08/2021</span>
+					<span>Remote</span>
+				</div>
+				<div>
+					<h3>Freelance Developer</h3>
+					<div class="org"><b>Freelancer.com</b></div>
+					<ul class="points">
+						<li>Optimized websites and mobile applications for performance.</li>
+						<li>Reported on product performance and usage metrics, and maintained user documentation.</li>
+					</ul>
+				</div>
+			</article>
+		</div>
+	</section>
+
+	<!-- -------------------------------------------------------------- Skills -->
+	<section class="section" id="skills">
+		<div class="wrap">
+			<div class="label">Skills</div>
+
+			<dl class="rows">
 				<div class="row">
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>C</h3>
-							<h3>C#</h3>
-							<h3>C++</h3>
-							<h3>Assembly</h3>
-							<h3>Linux Bash</h3>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>Java</h3>
-							<h3>Python</h3>
-							<h3>Haskell</h3>
-							<h3>HTML5</h3>
-							<h3>Verilog</h3>
-						</div>
-					</div>
+					<dt>Languages</dt>
+					<dd>C# · .NET · Java · C++ · C · Python · PowerShell · Assembly x86 · Haskell · SQL</dd>
 				</div>
-			</div>
-		</section>
-
-		<section class="ftco-section ftco-project" id="projects-section">
-			<div class="container">
-				<div class="row justify-content-center pb-5">
-			<div class="col-md-12 heading-section text-center ftco-animate">
-				<h1 class="big big-2">Projects</h1>
-				<h2 class="mb-4">Personal Projects</h2>
-				<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p> -->
-			</div>
-			</div>
-				
-					<div class="col-md-12">
-						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/chess.jpg);">
-							<div class="overlay"></div>
-							<div class="text text-center p-4">
-								<h3><a href="#">Chess Engine</a></h3>
-								<span>Java</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-12">
-						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/compiler.jpg);">
-							<div class="overlay"></div>
-							<div class="text text-center p-4">
-								<h3><a href="#">Compiler</a></h3>
-								<span>Python</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-12">
-						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/cPrepro.jpg);">
-							<div class="overlay"></div>
-							<div class="text text-center p-4">
-								<h3><a href="#">C Pre-Processor</a></h3>
-								<span>C</span>
-							</div>
-						</div>
-
-						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/abstractSyntax.jpg);">
-							<div class="overlay"></div>
-							<div class="text text-center p-4">
-								<h3><a href="#">Abstract Syntax Tree</a></h3>
-								<span>Assembly</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-12">
-						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/facerecog.jpg);">
-							<div class="overlay"></div>
-							<div class="text text-center p-4">
-								<h3><a href="#">Face Recognition</a></h3>
-								<span>Python</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-12">
-						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-3.jpg);">
-							<div class="overlay"></div>
-							<div class="text text-center p-4">
-								<h3><a href="#">Data Processing App</a></h3>
-								<span>Haskell</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-12">
-						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/turingmachine.jpg);">
-							<div class="overlay"></div>
-							<div class="text text-center p-4">
-								<h3><a href="#">Turing Machine</a></h3>
-								<span>Python</span>
-							</div>
-						</div>
-					</div>
-
-				
-					<div class="col-md-12">
-						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/satSolver.jpg);">
-							<div class="overlay"></div>
-							<div class="text text-center p-4">
-								<h3><a href="#">SAT Solver</a></h3>
-								<span>Python</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-12">
-						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/client_server.jpg);">
-							<div class="overlay"></div>
-							<div class="text text-center p-4">
-								<h3><a href="#">Client - Server App</a></h3>
-								<span>C++</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-12">
-						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/webclient.jpg);">
-							<div class="overlay"></div>
-							<div class="text text-center p-4">
-								<h3><a href="#">Web Client - REST API</a></h3>
-								<span>C++</span>
-							</div>
-						</div>
-					</div>
-										
-					<div class="col-md-12">
-						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/snakegame.jpg);">
-							<div class="overlay"></div>
-							<div class="text text-center p-4">
-								<h3><a href="#">Snake</a></h3>
-								<span>Java</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-12">
-						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/flappyciird.jpg);">
-							<div class="overlay"></div>
-							<div class="text text-center p-4">
-								<h3><a href="#">Flappy Bird</a></h3>
-								<span>Java</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-12">
-						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/supermario.jpg);">
-							<div class="overlay"></div>
-							<div class="text text-center p-4">
-								<h3><a href="#">Super Mario</a></h3>
-								<span>Java</span>
-							</div>
-						</div>
-					</div>
-
+				<div class="row">
+					<dt>Cloud &amp; DevOps</dt>
+					<dd>Azure (Public &amp; Sovereign) · EV2 · Geneva Actions · Key Vault · Kusto · Bicep/ARM · CI/CD · Git</dd>
 				</div>
-				
+				<div class="row">
+					<dt>Engineering</dt>
+					<dd>Microservices · Distributed systems · Backend · Full-stack · Testing · OOP · Algorithms &amp; data structures</dd>
+				</div>
+				<div class="row">
+					<dt>Tools</dt>
+					<dd>Visual Studio · VS Code · Azure DevOps · Kusto Explorer · Geneva/MDS · Docker · Playwright · JIRA · Linux &amp; Bash</dd>
+				</div>
+			</dl>
+		</div>
+	</section>
+
+	<!-- ------------------------------------------------------------ Projects -->
+	<section class="section" id="projects">
+		<div class="wrap">
+			<div class="label">Projects</div>
+
+			<div class="projects">
+				<article class="project">
+					<h3>COOL Compiler <span>2022 — 23</span></h3>
+					<p>Full multi-stage compiler for COOL in Java — lexer, parser, semantic analysis and code generation.</p>
+					<div class="stack">Java</div>
+				</article>
+
+				<article class="project">
+					<h3>Chess Engine <span>2021</span></h3>
+					<p>Chess bot playing fast and reasonably well, using minimax with alpha-beta pruning.</p>
+					<div class="stack">Java</div>
+				</article>
+
+				<article class="project">
+					<h3>Abstract Syntax Tree <span>2021</span></h3>
+					<p>AST implementation in x86 Assembly — manual memory layout, pointer arithmetic and recursive traversal.</p>
+					<div class="stack">Assembly x86</div>
+				</article>
+
+				<article class="project">
+					<h3>Mini Pre-Processor <span>2022</span></h3>
+					<p>GCC-style preprocessor resolving all defines and includes in a C source file.</p>
+					<div class="stack">C</div>
+				</article>
+
+				<article class="project">
+					<h3>Face &amp; Emotion Detector <span>2022</span></h3>
+					<p>Real-time detection with OpenCV, running on a Raspberry Pi 4 with a camera module.</p>
+					<div class="stack">Python · OpenCV</div>
+				</article>
+
+				<article class="project">
+					<h3>SAT Solver <span>University</span></h3>
+					<p>Boolean satisfiability solver with unit propagation and backtracking search.</p>
+					<div class="stack">Python</div>
+				</article>
+
+				<article class="project">
+					<h3>Client–Server Application <span>University</span></h3>
+					<p>Multi-client TCP/UDP application with a custom protocol and concurrent connection handling.</p>
+					<div class="stack">C++</div>
+				</article>
+
+				<article class="project">
+					<h3>Web Client — REST API <span>University</span></h3>
+					<p>HTTP client consuming a REST API with JSON parsing, session cookies and JWT authentication.</p>
+					<div class="stack">C++</div>
+				</article>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- loader -->
-		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="78px" height="78px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+	<!-- ----------------------------------------------- Education & certs -->
+	<section class="section" id="education">
+		<div class="wrap">
+			<div class="label">Education</div>
 
+			<article class="entry">
+				<div class="entry-when">
+					<span>09/2019 — 07/2023</span>
+					<span>Bucharest, RO</span>
+				</div>
+				<div>
+					<h3>B.Sc. Computer Science</h3>
+					<div class="org"><span class="mark"><img src="images/test2.png" alt=""></span><b>Politehnica University of Bucharest</b> · Faculty of Automatic Control and Computer Science</div>
+					<ul class="points">
+						<li>Core coursework in programming, data structures and algorithms, networks, databases, computer architecture and operating systems.</li>
+						<li>Focus on algorithm design, parallel and distributed algorithms, programming paradigms and compilers.</li>
+					</ul>
+				</div>
+			</article>
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery-migrate-3.0.1.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.easing.1.3.js"></script>
-		<script src="js/jquery.waypoints.min.js"></script>
-		<script src="js/jquery.stellar.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/aos.js"></script>
-		<script src="js/jquery.animateNumber.min.js"></script>
-		<script src="js/scrollax.min.js"></script>
-		<script src="js/main.js"></script>
-		
-  </body>
+			<article class="entry">
+				<div class="entry-when">
+					<span>2015 — 2019</span>
+				</div>
+				<div>
+					<h3>Baccalaureate Diploma</h3>
+					<div class="org"><span class="mark"><img src="images/hsss.png" alt=""></span><b>National College &ldquo;Anastasescu&rdquo;</b> · Mathematics &amp; Informatics</div>
+				</div>
+			</article>
+
+			<div class="label label--spaced">Certifications</div>
+
+			<dl class="rows">
+				<div class="row">
+					<dt>2022 — 23</dt>
+					<dd><b>Python Fundamentals</b> — Google Digital Garage workshop; hands-on projects in PyCharm, certificate earned.</dd>
+				</div>
+				<div class="row">
+					<dt>2021 — 22</dt>
+					<dd><b>Android Fundamentals</b> — Google Digital Garage workshop; hands-on projects in Android Studio, certificate earned.</dd>
+				</div>
+			</dl>
+		</div>
+	</section>
+
+	<!-- ------------------------------------------------------------- Contact -->
+	<section class="section contact" id="contact">
+		<div class="wrap">
+			<div class="label">Contact</div>
+			<p>Open to conversations about cloud infrastructure, reliability engineering and backend work. Email is the fastest way to reach me.</p>
+			<div class="contact-links">
+				<a href="mailto:sarugabriel2011@yahoo.com">sarugabriel2011@yahoo.com</a>
+				<a href="https://www.linkedin.com/in/saru-gabriel-alexandru/" target="_blank" rel="noopener">LinkedIn</a>
+				<a href="https://github.com/gabrielsaru28" target="_blank" rel="noopener">GitHub</a>
+				<button class="linkish" type="button" data-cv-open>Download CV</button>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="wrap">
+			<span>© <span data-year>2026</span> Saru Gabriel-Alexandru</span>
+			<span>Sibiu, Romania</span>
+		</div>
+	</footer>
+
+	<!-- ---------------------------------------------------------- CV chooser -->
+	<dialog class="cv-dialog" id="cv-dialog" aria-labelledby="cv-dialog-title">
+		<div class="cv-dialog-inner">
+			<button class="cv-close" type="button" data-cv-close aria-label="Close">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+			</button>
+
+			<div class="label">Curriculum Vitae</div>
+			<h2 id="cv-dialog-title">Pick the version you need</h2>
+			<p>Same career, two lengths. Both are up to date as of September 2026.</p>
+
+			<div class="cv-options">
+				<article class="cv-option">
+					<div class="cv-option-top">
+						<h3>One-page résumé</h3>
+						<span class="cv-pages">1 page</span>
+					</div>
+					<p>The condensed sheet — skills, every role with full bullets, projects and certifications on a single side. Best for a quick scan or an application form.</p>
+					<div class="cv-actions">
+						<a class="btn btn--solid" href="Saru_Gabriel_Alexandru_CurriculumVitae.pdf" target="_blank" rel="noopener">View</a>
+						<a class="btn" href="Saru_Gabriel_Alexandru_CurriculumVitae.pdf" download>Download</a>
+					</div>
+				</article>
+
+				<article class="cv-option">
+					<div class="cv-option-top">
+						<h3>Detailed CV</h3>
+						<span class="cv-pages">2 pages</span>
+					</div>
+					<p>The long form — professional summary, skills grouped by domain, and a tools &amp; tech breakdown under each role. Best for a technical reviewer.</p>
+					<div class="cv-actions">
+						<a class="btn btn--solid" href="Saru_Gabriel_Alexandru_CV.pdf" target="_blank" rel="noopener">View</a>
+						<a class="btn" href="Saru_Gabriel_Alexandru_CV.pdf" download>Download</a>
+					</div>
+				</article>
+			</div>
+		</div>
+	</dialog>
+
+	<script src="js/site.js"></script>
+</body>
 </html>
